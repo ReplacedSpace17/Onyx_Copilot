@@ -11,6 +11,10 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
+    "sweetalert2": "^11.7.3",
+    "type": "^2.7.2",
+    "typeface-roboto": "^1.1.13",
+    "typeface-roboto-mono": "^1.1.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

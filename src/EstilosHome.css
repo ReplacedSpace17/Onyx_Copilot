@@ -1,0 +1,78 @@
+/*Estilos para header*/
+
+body{
+    background-color: #e0e0e0; 
+}
+
+/*div de fondo*/
+.divFondo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#titleHome{
+    color: #313131;
+    font-size: 50px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+}
+/*Estilos para menu*/
+.cards{
+    background-color: #e0e0e0; 
+    padding: 1rem;
+    padding-bottom: 0px;
+    margin: 2rem;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    box-shadow: 5px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+
+    transition: all .3s;
+}
+.labelCards{
+    color: #313131;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/*Hover*/
+.cards:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.363);
+    cursor: pointer;
+    background-color: #f0efef;
+    transform: scale(1.1);
+
+}
+
+/*btn ayuda*/
+.btnAyuda {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    width: auto;
+    height: 50px;
+    background-color: #313131;
+    border-radius: 80px;
+    border: none;
+    padding: 0 80px;
+    transition: all .2s ease;
+    justify-content: center;
+    align-items: center;
+ 
+}
+span{
+    color: #e0e0e0;
+    font-size: 18px;
+
+}
+.btnAyuda:hover{
+    transform: scale(1.1);
+}
+
