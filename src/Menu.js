@@ -12,7 +12,7 @@ import Swal from 'sweetalert2';
 import "./EstilosHome.css";
 
 function Menu() {
-  const [h1Value, setH1Value] = useState('Bienvenidos/as');/*Valor inicial del H1*/
+  const [h1Value, setH1Value] = useState('ONYX COPILOT');/*Valor inicial del H1*/
   const [value, setValue] = useState('Bienvenidos/as');/*Valor inicial del H1*/
   return (
 
@@ -22,17 +22,17 @@ function Menu() {
     <div style={{ display: 'flex', justifyContent: 'center', backgroundColor: '#e0e0e0', paddingTop: '0px'}}>
 
       
-      <div className="cards" onMouseEnter={() => setH1Value('Cotizar impresión 3D')} >
+      <div className="cards" onMouseEnter={() => setH1Value('IMPRESIÓN 3D SENCILLA')} >
           <img src={icon1} alt="logo" style={{ height: '100px'}} />
-          <h2 className="labelCards">Impresión 3D</h2>
+          <h2 className="labelCards">Simple 3D Printing</h2>
       </div>
-      <div className="cards" onMouseEnter={() => setH1Value('Diseña e imprime')} >
+      <div className="cards" onMouseEnter={() => setH1Value('DISEÑO E IMPRESIÓN 3D')} >
           <img src={icon2} alt="logo" style={{ height: '100px'}} />
-          <h2 className="labelCards">Diseño e impresión 3D</h2>
+          <h2 className="labelCards">3D Design and Printing</h2>
       </div>
-      <div className="cards"onMouseEnter={() => setH1Value('Imprime por lotes')} >
+      <div className="cards"onMouseEnter={() => setH1Value('IMPRESIÓN 3D POR LOTES')} >
           <img src={icon3} alt="logo" style={{ height: '100px'}} />
-          <h2 className="labelCards">Impresión por lotes</h2>
+          <h2 className="labelCards">Batch 3D Printing</h2>
       </div>
 
       
@@ -47,10 +47,11 @@ function Menu() {
 
 function mostrarAyuda() {
   Swal.fire({
-    title: 'Mensaje de alerta',
-    html: '<span style="color: red; font-size: 24px;">Este es un mensaje de alerta en rojo y con letra grande.</span>',
+    title: '¿Que función utilizar?',
+    html: '<p style="color: #494949; font-size: 18px;"><strong>Onyx Copilot</strong> contiene 3 secciones: <br><br><strong>Simple 3D Printing</strong> te ayudará a estimar el costo por impresión donde el cliente proporciona el modelo o archivo. <br><br><strong>3D Design and Printing</strong> te ayudará a estimar el costo por servicio de diseño a medida e impresión para el cliente. <br><br><strong>Batch 3D Printing</strong> estima el costo total por la impresión de un archivo o modelo por lotes, impresión 3D a mayoreo, etc.</p>',
     icon: 'warning',
-    confirmButtonText: 'Aceptar'
+    confirmButtonText: 'Entendido',
+    background: '#E9E9E9'
   });
   
   
