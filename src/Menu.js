@@ -3,9 +3,12 @@ import { FaHome, FaUser, FaCog } from 'react-icons/fa';
 import icon1 from './images/service1_ico.png';
 import icon2 from './images/service2_ico.png';
 import icon3 from './images/service3_ico.png';
+import logo from './logo.svg';
 import 'typeface-roboto';
 import 'typeface-roboto-mono';
 import Swal from 'sweetalert2';
+
+ 
 
 
 
@@ -38,8 +41,31 @@ function Menu() {
       
     </div>
     <button class="btnAyuda" onClick={mostrarAyuda}>
-    <span>¿Cual debería elegir?</span>
+      <span>¿Cual debería elegir?</span>
     </button>
+
+    <div className='div-btn-laterales'>
+      <button className="boton-flotante" >
+        <img src={logo} alt="logo" style={{ height: '33px'}} />
+      </button>
+      <button className="boton-flotante">
+        <img src={logo} alt="logo" style={{ height: '33px'}} />
+      </button>
+      <button className="boton-flotante">
+        <img src={logo} alt="logo" style={{ height: '33px'}} />
+      </button>
+      <button className="boton-flotante">
+        <img src={logo} alt="logo" style={{ height: '33px'}} />
+      </button>
+      <button className="boton-flotante">
+        <img src={logo} alt="logo" style={{ height: '33px'}} />
+      </button>
+      <button className="boton-flotante" onClick={onyxWeb}>
+        <img src={logo} alt="logo" style={{ height: '33px'}} />
+      </button>
+      
+    </div>
+    
   </div>
   );
 }
@@ -53,8 +79,9 @@ function mostrarAyuda() {
     confirmButtonText: 'Entendido',
     background: '#E9E9E9'
   });
-  
-  
+}
+function onyxWeb() {
+  window.open('https://onyx3d.com.mx/', '_blank');
 }
 
 export default Menu;
