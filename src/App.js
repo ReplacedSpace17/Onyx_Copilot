@@ -5,6 +5,7 @@ import React, { useEffect } from 'react';
 import Header from './Header';
 import Menu from './Menu';
 
+import Login from './Login/Login';
 
 function App() {
   useEffect(() => {
@@ -19,8 +20,8 @@ function App() {
 
   return (
     <div >
-      <Header />
-      <Menu />
+   
+      <Login />
     </div>
   );
 }
